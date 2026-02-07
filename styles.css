@@ -5,6 +5,22 @@ body {
 h1 {
     text-align: center;
 }
-figure {
+
+.profile {
+  position: relative;
   text-align: center;
+}
+
+.center-image {
+  margin: 0 auto;
+}
+
+.personal {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  background: rgb(219, 134, 231);
+  padding: 15px;
+  border-radius: 10px;
 }
