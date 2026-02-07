@@ -24,3 +24,8 @@ h1 {
   padding: 15px;
   border-radius: 10px;
 }
+.personal-info li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
