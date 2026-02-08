@@ -1,31 +1,53 @@
 body {
     background-color: rgb(241, 201, 233);
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
+    margin:  0;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    max-width: 900px;
+    width: 95%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5p 15px rgba(0,0,0,0.2);
 }
 
 h1 {
     text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
 .profile {
     display: flex;
     flex-wrap: wrap;          
-    align-items: center;      
-    justify-content: center;  
-    gap: 20px;                
-    padding: 20px;
-    text-align: left;      
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 
 .center-image img {
-    max-width: 100%;   
-    width: 300px;      
+    max-width: 100%;  
+    width: 300px;    
     height: auto;
     border-radius: 10px;
+}
+
+.center-image figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
 }
 
 .personal {
@@ -41,6 +63,14 @@ h1 {
     font-size: 18px;
 }
 
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
 
 @media (max-width: 600px) {
     .profile {
@@ -48,9 +78,9 @@ h1 {
         text-align: center;   
     }
 
-    .center-image img,
-    .personal {
+    .center-image img,.personal {
         width: 100%;            
         max-width: 300px;      
     }
 }
+
