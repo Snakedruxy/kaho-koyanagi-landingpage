@@ -1,10 +1,11 @@
+/* --------------------------- General --------------------------- */
 body {
     background-color: rgb(241, 201, 233);
     font-family: 'Times New Roman', Times, serif;
-    margin:  0;
+    margin: 0;
     display: flex;
-    padding: 20px 0;
     justify-content: center;
+    padding: 20px 0;
 }
 
 main {
@@ -13,9 +14,10 @@ main {
     width: 95%;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5p 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* --------------------------- Titles --------------------------- */
 h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -26,29 +28,23 @@ h2 {
     margin-bottom: 10px;
 }
 
-
+/* --------------------------- Profile Section --------------------------- */
 .profile {
     display: flex;
     flex-wrap: wrap;          
     align-items: center;     
+    justify-content: center;  
     gap: 20px;
-    justify-content: center;
     margin-bottom: 30px;
 }
 
-
 .center-image img {
-    max-width: 100%;  
-    width: 300px;    
+    width: 100%;
+    max-width: 400px;  
     height: auto;
     border-radius: 10px;
 }
 
-.center-image figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-}
 
 .personal {
     background: rgb(219, 134, 231);
@@ -57,10 +53,26 @@ h2 {
     
     display: inline-block;
 }
+    
+
+.center-image figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
 
 .personal-info li {
     margin-bottom: 8px;
     font-size: 18px;
+}
+
+/* --------------------------- Traits & Personality --------------------------- */
+.traits-content, .personality {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    padding: 0 10px;
 }
 
 section {
@@ -71,28 +83,36 @@ ul {
     padding-left: 20px;
 }
 
-.traits-content {
-    display: inline-block; 
-    text-align: left;      
-    padding-left: 20px;     
-    margin-left: 40px;     
-
+/* --------------------------- Video Wrapper --------------------------- */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;       /* tamaño máximo en laptop */
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    margin: 40px auto;
+    height: 0;
 }
 
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --------------------------- Responsive adjustments --------------------------- */
+@media (max-width: 1024px) {
+    .video-wrapper {
+        max-width: 80%;
+        padding-bottom: calc(80% * 9 / 16);
+    }
+}
 
 @media (max-width: 600px) {
-    .profile {
-        flex-direction: column; 
-        text-align: center;   
-    }
-
-    .center-image img,.personal {
-        width: 100%;            
-        max-width: 300px;      
+    .video-wrapper {
+        max-width: 100%;
+        padding-bottom: calc(100% * 9 / 16);
     }
 }
-
-
-
-
-
