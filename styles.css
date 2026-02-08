@@ -71,6 +71,14 @@ ul {
     padding-left: 20px;
 }
 
+.traits-content {
+    display: inline-block; 
+    text-align: left;      
+    padding-left: 20px;     
+    margin-left: 40px;     
+
+}
+
 
 @media (max-width: 600px) {
     .profile {
@@ -83,6 +91,7 @@ ul {
         max-width: 300px;      
     }
 }
+
 
 
 
