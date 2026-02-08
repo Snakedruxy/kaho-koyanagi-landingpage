@@ -52,10 +52,10 @@ h2 {
 
 .personal {
     background: rgb(219, 134, 231);
-    padding: 15px;
+    padding: 15px 20px;  
     border-radius: 10px;
-    max-width: 300px;  
-    flex: 1 1 200px;   
+    
+    display: inline-block;
 }
 
 .personal-info li {
@@ -83,6 +83,7 @@ ul {
         max-width: 300px;      
     }
 }
+
 
 
 
