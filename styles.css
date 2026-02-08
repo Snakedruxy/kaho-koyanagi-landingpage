@@ -55,7 +55,7 @@ h2 {
     padding: 15px;
     border-radius: 10px;
     max-width: 300px;  
-    flex: 1 1 250px;   
+    flex: 1 1 200px;   
 }
 
 .personal-info li {
@@ -83,5 +83,6 @@ ul {
         max-width: 300px;      
     }
 }
+
 
 
